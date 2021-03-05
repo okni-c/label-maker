@@ -5,21 +5,31 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Label Maker</title>
-    
+
 </head>
 
 <body>
+    <section class="no-print">
+        <header>
+            <h1>LABEL MAKER</h1>
+        </header>
 
-    <header>
-        <h1>LABEL MAKER</h1>
-    </header>
+        <section class="barcode-input-container">
+            <input id="text1" class="input-item" placeholder="Main Barcode Here">
+            <input id="text2" class="input-item" placeholder="PID Number Here">
+            <input id="text3" class="input-item" placeholder="Job Number Here">
+        </section>
 
-    <section class="barcode-input-container">
-        <input id="text1" class="input-item" placeholder="Main Barcode Here">
-        <button onclick="input()" id="bt1">Submit</button>
-        <!-- <input id="text2" class="input-item" placeholder="PID Number Here">
-        <input id="text3" class="input-item" placeholder="Job Number Here"> -->
+        <section class="options">
+            <input type="checkbox" id="auto-print" name="Auto-Print">
+            <label for="auto-print">Auto-Print</label>
+        </section>
+        <hr>
     </section>
+
+    <section class="label">
+    </section>
+
     <script src="./assets/script.js"></script>
 </body>
 
